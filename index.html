@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <style>
+        ul{
+            list-style-type: circle;
+        }
+        p{
+            display: inline;
+         }
+        img{
+            height: 2rem;
+            width:2rem;
+        }
+        div{
+            text-align: center;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            /* max-width: 500px; */
+            margin-bottom: -2rem;
+            background-color: #010435;
+            padding: 30px 40px;
+            color: white;
+            text-align: center;
+        }
+
+        input{
+            width : 40%;    
+            border-style : solid;
+            border-radius: 5px;
+        }
+        form{
+            padding-bottom: 20px;
+        }
+        p{
+            padding-right: 2%;  
+        }
+        .task{
+            display: flex;
+            justify-content: space-between;
+            border-left: 6px solid blue;
+            background-color: whitesmoke;
+            margin-bottom: 7px;
+        }
+
+        ul li {
+                cursor: pointer;
+                position: relative;
+                margin-left: 5rem;
+                margin-right: 9rem;
+                padding: 14px 8px 10px 40px;
+                font-size: 18px;
+                transition: 0.2s;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border-radius: 7px;
+            }
+        li:hover {
+                 background: #ddd;
+                }
+        
+        li.checked {
+            background: rgb(141, 140, 140);
+            color: #fff;
+            text-decoration: line-through;
+            }
+        
+        body{
+            background: url("another.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        input[type=text] {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;   
+            outline: none;
+            border-radius: 20rem;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid rgb(8, 88, 194);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class = "header">
+        <h1 style="font-style: italic;
+        font-family: serif;"
+        class="display-2">My TODO List</h1>
+    </div>
+      
+    <div class = "background"></div>
+    <div class="main container mt-4">
+        <form>
+            <input type="text" placeholder = "Enter task...">
+            <button class="btn btn-primary">Add</button>
+        </form>
+        <ul>
+        </ul>
+    </div>
+    <script src = "todo.js"></script>
+</body>
+</html>
